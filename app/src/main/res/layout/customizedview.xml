@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECCEAF">
+
+
+    <TextView
+        android:id="@+id/urduTarjama"
+        android:layout_width="331dp"
+        android:layout_height="169dp"
+
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:clickable="true"
+        android:fontFamily="@font/jameelnoorinastaleeq"
+        android:scrollbars="vertical"
+        android:textColor="#60360C"
+        app:autoSizeMaxTextSize="30sp"
+        app:autoSizeMinTextSize="10sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/englishTarjama" />
+
+    <TextView
+        android:id="@+id/englishTarjama"
+        android:layout_width="328dp"
+        android:layout_height="183dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:fontFamily="@font/jameelnoorinastaleeq"
+        android:scrollbarFadeDuration="50000"
+        android:scrollbars="vertical"
+        android:textColor="#60360C"
+        app:autoSizeMaxTextSize="30sp"
+        app:autoSizeMinTextSize="10sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ayah" />
+
+    <TextView
+        android:id="@+id/ayah"
+        android:layout_width="328dp"
+        android:layout_height="148dp"
+
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="48dp"
+        android:clickable="true"
+        android:fontFamily="@font/noorehuda"
+        android:scrollbars="vertical"
+        android:textColor="#60360C"
+        app:autoSizeMaxTextSize="30sp"
+        app:autoSizeMinTextSize="10sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#60360C"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="673dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_marginTop="29dp"
+        android:background="#502C07"
+        android:backgroundTint="#57320D"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/urduTarjama" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
